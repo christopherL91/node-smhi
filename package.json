@@ -1,0 +1,24 @@
+{
+  "name": "node-smhi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Christopher Lillthors",
+  "jsnext:main": "src/main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "rollup -c --watch",
+    "build": "rollup -c",
+    "test": "ava",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "ava": "^0.16.0",
+    "babel-preset-es2015-rollup": "^1.2.0",
+    "rollup": "^0.36.3",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-watch": "^2.5.0"
+  },
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  }
+}
